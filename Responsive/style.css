@@ -1,0 +1,218 @@
+.container
+{
+    width: 100%;
+    height: 100vh;
+   text-align: center;
+   justify-content: center;
+   font-family: 'Stick No Bills';
+   font-size:larger;
+}
+@font-face
+{ 
+    font-family: 'Stick No Bills';
+    src:url('./StickNoBills-Regular.ttf')format("truetype");
+}
+.main
+{
+    display: flex;  
+    width: 100%;
+    height: 20vh;
+    gap: 10px;
+    margin: 10px 10px;
+}
+.first_heading
+{
+    background-color: burlywood;
+    width: 50%;
+    transition: width 2s, height 2s, transform 2s;
+}
+ #first_heading_1:hover 
+{
+    width: 25%;
+    background-color: rgb(79, 207, 122);
+}
+#first_heading_2:hover 
+{
+    width: 25%;
+    background-color: rgb(79, 207, 122);
+}
+.content_area
+{
+    background-color: rgb(207, 245, 149);
+    width: 100%;
+    height: 40vh;
+    margin: 10px 10px;
+    transition: width 2s, height 2s, transform 2s;
+}
+.content_area:hover
+{
+    height: 60vh;
+    background-image:url('image/middle1.jpg');
+    background-color:aqua;
+    background-size: 50% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.sub_headings
+{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 20vh;
+    margin: 10px 10px;
+}
+.sub_head1
+{
+    background-color: rgb(240, 154, 243);
+    width:35%;
+    transition: width 2s,height 2s,transform 2s;   
+}
+#sub_1:hover
+{
+    background-image: url('image/bg-con1.jpg');
+    transform:skewX(40deg);
+}
+#sub_2:hover
+{
+    background-image: url('image/groot.jpg');
+    background-size: 100% 100%;
+    transform: scale(1.05);
+  
+}
+#sub_3:hover
+{
+    background-image: url('image/harry.jpg');
+    background-size: 100% 100%;
+
+}
+.bottom_areas
+{
+    display: flex;
+    gap:10px;
+    width: 100%;
+    height: 20vh;
+    margin: 10px 10px;
+}
+.bottom_1
+{
+    background-color:rgb(123, 146, 247);
+    width:25%;
+    height: 20vh;
+  
+}
+#area_1:hover{
+    background-image: url(image/foot1.jpg);
+    background-size: 100% 100%;  
+}
+
+#area_2:hover{
+    background-image: url(image/foot2.jpg);
+    background-size: 100% 100%; 
+}
+
+#area_3:hover{
+    background-image: url(image/foot3.jpg);
+    background-size: 100% 100%; 
+}
+
+#area_4:hover{
+    background-image: url(image/foot4.jpg);
+    background-size: 100% 100%; 
+}
+
+
+.span1{
+    background: url("spriteimage.svg") -62px -113px;
+}
+.span2{
+    background: url("spriteimage.svg") -17px -113px;
+}
+.span3{
+    background: url("spriteimage.svg") -292px -113px;
+}
+.span4{
+    background: url("spriteimage.svg") -815px -113px;
+}
+.span5{
+    background: url("spriteimage.svg") -460px -113px;
+}
+.span6{
+    background: url("spriteimage.svg") -954px -113px;
+}
+.span1,.span2,.span3,.span4,.span5,.span6
+{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+@media (max-width:768px)
+{
+    .main
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .first_heading{
+        width: 100%;
+    }
+    .sub_headings{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sub_head1{
+        width: 100%;
+    }
+    .bottom_areas{
+        display: flex;
+        flex-wrap: wrap;    
+    }
+    .bottom_1{
+        width:49%; 
+        height: 10vh;
+    } 
+}
+@media(max-width:526px)
+{
+    .bottom_areas{
+        display: flex;
+        flex-wrap: wrap;   
+    }
+    .bottom_1{
+        width:48.5%; 
+        height: 10vh;
+    }
+}
+@media (max-width:320px)
+{
+    .main
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .first_heading{
+        width: 100%;
+    }
+    .sub_headings{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sub_head1{
+        width: 100%;
+    }
+   
+    .bottom_areas{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .bottom_1{
+        width:100%; 
+        height: 3vh;
+        gap:2px;
+    }
+   
+}
+
+
+
+
